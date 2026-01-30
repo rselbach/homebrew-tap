@@ -1,6 +1,6 @@
 cask "barsignal" do
-  version "0.1.0"
-  sha256 "16a871e4537ca6c5054c3d0452409dbb6b99e6ed8f0b260193a92b7c473265e0"
+  version "0.1.1"
+  sha256 "1d8f7724ffe75da480d2dacb5bf401cbfa515d13e80f16a032d8148db3978d5d"
 
   url "https://github.com/rselbach/barsignal/releases/download/v#{version}/BarSignal-#{version}.dmg"
   name "BarSignal"
