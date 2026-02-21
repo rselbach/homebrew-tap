@@ -1,6 +1,6 @@
 cask "barsignal" do
-  version "0.1.1"
-  sha256 "1d8f7724ffe75da480d2dacb5bf401cbfa515d13e80f16a032d8148db3978d5d"
+  version "0.1.2"
+  sha256 "824accb5339a19d3fb27a1d5e55873daa358f5d322633b2704ce355a9be80695"
 
   url "https://github.com/rselbach/barsignal/releases/download/v#{version}/BarSignal-#{version}.dmg"
   name "BarSignal"
@@ -12,6 +12,6 @@ cask "barsignal" do
   app "BarSignal.app"
 
   zap trash: [
-    "~/Library/Preferences/com.selbach.BarSignal.plist",
+    "~/Library/Preferences/com.rselbach.barsignal.plist",
   ]
 end
