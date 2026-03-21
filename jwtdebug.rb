@@ -5,21 +5,21 @@
 class Jwtdebug < Formula
   desc "A command line tool to decode, verify and generate JWTs (JSON Web Tokens)."
   homepage "https://github.com/rselbach/jwtdebug"
-  version "1.2.0"
+  version "1.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rselbach/jwtdebug/releases/download/v1.2.0/jwtdebug_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "be5a8ba97ad4db4132e30131e757d2d4291b4f379646a09804c5c359c9aa6554"
+      url "https://github.com/rselbach/jwtdebug/releases/download/v1.2.1/jwtdebug_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "45fb1dcdeb333ff899b922d2932a4add2edcd905dfad299bb77e2fc66e4bba55"
 
       define_method(:install) do
         bin.install "jwtdebug"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rselbach/jwtdebug/releases/download/v1.2.0/jwtdebug_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "f270a654a7ae3950fa989f0cc9000d4cbaa1db7dad75305a967b74a411002d57"
+      url "https://github.com/rselbach/jwtdebug/releases/download/v1.2.1/jwtdebug_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "e6eb06b73195af644f932bbec91a8abe6ef75bf7f54dd2e69285d563d9d49492"
 
       define_method(:install) do
         bin.install "jwtdebug"
@@ -29,15 +29,15 @@ class Jwtdebug < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rselbach/jwtdebug/releases/download/v1.2.0/jwtdebug_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "8aa270ff4d6ec159744416633d4b8dd219d597b7700195872688f8b519c067c9"
+      url "https://github.com/rselbach/jwtdebug/releases/download/v1.2.1/jwtdebug_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "5eeb4d2a1f260bce9d357714fee79b0a0c25a58b972a62079447fff71acd56ac"
       define_method(:install) do
         bin.install "jwtdebug"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rselbach/jwtdebug/releases/download/v1.2.0/jwtdebug_Linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "0cc3543cfbe4ed5cd02da9942d956ecfdf1793716011fcf8efd2a8ea27c07458"
+      url "https://github.com/rselbach/jwtdebug/releases/download/v1.2.1/jwtdebug_Linux_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "9b085b93f0a94cfa171c83d06f924e471473a329582107977d96a32bb1597c2e"
       define_method(:install) do
         bin.install "jwtdebug"
       end
