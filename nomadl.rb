@@ -4,18 +4,18 @@
 class Nomadl < Formula
   desc "Terminal UI for browsing Nomad services and tailing task logs"
   homepage "https://github.com/rselbach/nomadl"
-  version "0.0.1"
+  version "0.0.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rselbach/nomadl/releases/download/v0.0.1/nomadl-0.0.1-darwin-amd64.zip"
-      sha256 "7ff44803f01ab2728abe42a20d1b714499cc0accc25ab8fc0595e98bd8d64f1e"
+      url "https://github.com/rselbach/nomadl/releases/download/v#{version}/nomadl-#{version}-darwin-amd64.zip"
+      sha256 "f7c7ea3cc57293429dad6cd26289b497c3510d132aa34187c2ec1b58819f8f02"
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/rselbach/nomadl/releases/download/v0.0.1/nomadl-0.0.1-darwin-arm64.zip"
-      sha256 "5895a68196f9bc28bd1775f16b28ab1d758a75c7275f01c64a6a1fda2de04955"
+      url "https://github.com/rselbach/nomadl/releases/download/v#{version}/nomadl-#{version}-darwin-arm64.zip"
+      sha256 "409b01167cadf10f319a34b9f438079b71056a107b7a3a2345465fa5800978b5"
     end
   end
 
