@@ -5,21 +5,21 @@
 class Rgrok < Formula
   desc "Small HTTP tunneling tool"
   homepage "https://github.com/rselbach/rgrok"
-  version "0.0.1"
+  version "0.0.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rselbach/rgrok/releases/download/v0.0.1/rgrok_0.0.1_darwin_amd64.tar.gz"
-      sha256 "280bda1a5e8d9f13804dad9c0013feb0f33a449c3ce12025cd83296efcc405a7"
+      url "https://github.com/rselbach/rgrok/releases/download/v0.0.2/rgrok_0.0.2_darwin_amd64.tar.gz"
+      sha256 "dab7d75bf168d70a1fd87714d48baa7982f354455223d33372935e2af22b533d"
 
       define_method(:install) do
         bin.install "rgrok"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rselbach/rgrok/releases/download/v0.0.1/rgrok_0.0.1_darwin_arm64.tar.gz"
-      sha256 "a85aeb30bd0a3dd52528c92aab276f632e6ec693b72b631a20e4899c0dfe477e"
+      url "https://github.com/rselbach/rgrok/releases/download/v0.0.2/rgrok_0.0.2_darwin_arm64.tar.gz"
+      sha256 "f95548c149bc2adf708f0e1d46b31abd35fa2cea37992d857990ecd524d6cce1"
 
       define_method(:install) do
         bin.install "rgrok"
@@ -29,15 +29,15 @@ class Rgrok < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rselbach/rgrok/releases/download/v0.0.1/rgrok_0.0.1_linux_amd64.tar.gz"
-      sha256 "f937e84d081609ecb4dc6e082d1ad6c197469d61bd2e65bcc00044ab04e633a6"
+      url "https://github.com/rselbach/rgrok/releases/download/v0.0.2/rgrok_0.0.2_linux_amd64.tar.gz"
+      sha256 "cb29dc65355412a6197125092999b64454f1cb88cf720852bd061f42c170e179"
       define_method(:install) do
         bin.install "rgrok"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rselbach/rgrok/releases/download/v0.0.1/rgrok_0.0.1_linux_arm64.tar.gz"
-      sha256 "6c047a6e90a5eec09529acdd582f61a914b7a1f480fbbf14447c70db535b2cfe"
+      url "https://github.com/rselbach/rgrok/releases/download/v0.0.2/rgrok_0.0.2_linux_arm64.tar.gz"
+      sha256 "e6326ab30fd6378a128e7d4e5329c40f27a8fd1ac326fa0adcb0a46e0d4bd721"
       define_method(:install) do
         bin.install "rgrok"
       end
