@@ -5,30 +5,30 @@
 class LlmUsage < Formula
   desc "Simple local usage report for Pi, Codex CLI, Claude Code, and OpenCode"
   homepage "https://github.com/rselbach/llm-usage"
-  version "0.0.1"
+  version "0.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rselbach/llm-usage/releases/download/v0.0.1/llm-usage_v0.0.1_darwin_amd64.tar.gz"
-      sha256 "de1b487e3a5a57377c99948f27659d9bf7d04c07a7330aac3ab42d9bd5708177"
+      url "https://github.com/rselbach/llm-usage/releases/download/v0.0.3/llm-usage_v0.0.3_darwin_amd64.tar.gz"
+      sha256 "262e69ef47f904645c5f26b3152624b307bcc1a9b3320d1fdecdbaff2a0f1640"
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/rselbach/llm-usage/releases/download/v0.0.1/llm-usage_v0.0.1_darwin_arm64.tar.gz"
-      sha256 "129333d4398e31970043416406bf92a65c931843dfcdeffab92ff0456d6d4b0b"
+      url "https://github.com/rselbach/llm-usage/releases/download/v0.0.3/llm-usage_v0.0.3_darwin_arm64.tar.gz"
+      sha256 "4a1b9bf5a17216e578d31c256d6a4280fc43691dfdc974a6dd746b932ec49ea9"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rselbach/llm-usage/releases/download/v0.0.1/llm-usage_v0.0.1_linux_amd64.tar.gz"
-      sha256 "d71a73e3aff7b2051ba546a2d5c6cf857fb5088df4c8955cb74ee42118e3d0d5"
+      url "https://github.com/rselbach/llm-usage/releases/download/v0.0.3/llm-usage_v0.0.3_linux_amd64.tar.gz"
+      sha256 "d5a501c52c6e878954de5d6d0c942c27c0cbd3312f7c0bb2833998a5bb581d3b"
     end
 
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rselbach/llm-usage/releases/download/v0.0.1/llm-usage_v0.0.1_linux_arm64.tar.gz"
-      sha256 "e2f1896a6bd2ba0ec7a5ec99c6f045e91b89ff2789b430cea0a79f0b9f32ddd1"
+      url "https://github.com/rselbach/llm-usage/releases/download/v0.0.3/llm-usage_v0.0.3_linux_arm64.tar.gz"
+      sha256 "03ad6cd99643c81d4b7b0b9c4f87c849a17f43f2d087c06bbc9a32ae175f3a36"
     end
   end
 
