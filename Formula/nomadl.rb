@@ -4,18 +4,18 @@
 class Nomadl < Formula
   desc "Local browser UI for searching Nomad logs"
   homepage "https://github.com/rselbach/nomadl"
-  version "0.9.5"
+  version "1.0.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/rselbach/nomadl/releases/download/v#{version}/nomadl-#{version}-darwin-amd64.zip"
-      sha256 "40c11658d58f2253d67eb8662661e049edc26b52590fd066a5dd0ed1470f2044"
+      sha256 "94980878640520a889a844e94a11a4f1c978e5950c6d76de7964001afc7f8288"
     end
 
     if Hardware::CPU.arm?
       url "https://github.com/rselbach/nomadl/releases/download/v#{version}/nomadl-#{version}-darwin-arm64.zip"
-      sha256 "0691adc5617bb63ed92d559863f3ecbf3013c0ed2129fc27295ad67ab3c1fed0"
+      sha256 "1dfe9cc15b3d21c6a79196da0b90b7717eb9f58f6a84a98eae2d3ab98c285c6e"
     end
   end
 
