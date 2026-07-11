@@ -5,21 +5,21 @@
 class Scimtest < Formula
   desc "Local SCIM/OIDC/SAML auth testing service"
   homepage "https://github.com/rselbach/scimtest"
-  version "0.1.3"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rselbach/scimtest/releases/download/v0.1.3/scimtest_0.1.3_darwin_amd64.tar.gz"
-      sha256 "586af3a01518a62f7b6109664104ca68d2be72f89d2df99b9bbb865ac86d4224"
+      url "https://github.com/rselbach/scimtest/releases/download/v0.2.0/scimtest_0.2.0_darwin_amd64.tar.gz"
+      sha256 "1c9dc13bea546e89e97abde0e0c3713b6578d7cd32fa6b176fc1e64ff6a3745d"
 
       define_method(:install) do
         bin.install "scimtest"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rselbach/scimtest/releases/download/v0.1.3/scimtest_0.1.3_darwin_arm64.tar.gz"
-      sha256 "c50233f415c38f2d8a87443e03c5cfc0dd2625e6df0fad5265cffad2d32f393d"
+      url "https://github.com/rselbach/scimtest/releases/download/v0.2.0/scimtest_0.2.0_darwin_arm64.tar.gz"
+      sha256 "850128b42a44fa76cf435f959924f06aa6f5e2303fdb3780d80882b89b661dc0"
 
       define_method(:install) do
         bin.install "scimtest"
@@ -29,15 +29,15 @@ class Scimtest < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rselbach/scimtest/releases/download/v0.1.3/scimtest_0.1.3_linux_amd64.tar.gz"
-      sha256 "ea66d7aa92d4b7bfeb7901bcdd9996d4b6d4f7b64688d1dcce801b48a55e29a2"
+      url "https://github.com/rselbach/scimtest/releases/download/v0.2.0/scimtest_0.2.0_linux_amd64.tar.gz"
+      sha256 "410a113d65c10be967f290e5cfa1e09b1b94770bf79500a351fc846c875445c3"
       define_method(:install) do
         bin.install "scimtest"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rselbach/scimtest/releases/download/v0.1.3/scimtest_0.1.3_linux_arm64.tar.gz"
-      sha256 "5be537303311eeeedd4b7217ad9923459b198334680e5d2d24750bab38eebf79"
+      url "https://github.com/rselbach/scimtest/releases/download/v0.2.0/scimtest_0.2.0_linux_arm64.tar.gz"
+      sha256 "ff16405138758fdc4e166cd4c1c85406d8bc860a9f0ff55f5ce293e30181fd5c"
       define_method(:install) do
         bin.install "scimtest"
       end
