@@ -1,6 +1,6 @@
 cask "scimtest-desktop" do
-  version "2.1.0"
-  sha256 "a827dad5cd1b2488759c57a5e625dc7ce2e9dd0849ccacc4566dba94d9cb0ac5"
+  version "2.2.0"
+  sha256 "6041f9ca6f429f8a9030176f5805af51d0fe7034849142f7f6dabf3ed40041c4"
 
   url "https://github.com/rselbach/scimtest/releases/download/v#{version}/scimtest-desktop_#{version}_arm64.dmg"
   name "scimtest"
