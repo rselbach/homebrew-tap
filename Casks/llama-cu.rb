@@ -1,6 +1,6 @@
 cask "llama-cu" do
-  version "0.3.0"
-  sha256 "780352c8a310fd77a9d6a360f2f1a4684103752013a2a32eb981f86a5b624c0d"
+  version "0.4.0"
+  sha256 "963dcb6a332b8a88e9fd21c9a02908bdda3b02d96939217bafda6141ae06e289"
 
   url "https://github.com/rselbach/llama-cu/releases/download/v#{version}/llama-cu-#{version}-macos-arm64.zip"
   name "llama-cu"
