@@ -1,6 +1,6 @@
 cask "scimtest-desktop" do
-  version "3.2.0"
-  sha256 "4eb004a7db3ef0f3daed269716736299be61d8903ba60f9981f117fa8e4ff987"
+  version "3.3.0"
+  sha256 "c467e44c3c53902e7b832ee293e12fbdfa2f2d5a0308aacc65aaab7c448efecc"
 
   url "https://github.com/rselbach/scimtest/releases/download/v#{version}/scimtest-desktop_#{version}_arm64.dmg"
   name "scimtest"
@@ -10,7 +10,7 @@ cask "scimtest-desktop" do
   auto_updates true
 
   depends_on arch: :arm64
-  depends_on macos: ">= :tahoe"
+  depends_on macos: :tahoe
 
   app "scimtest.app"
 end
